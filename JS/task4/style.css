@@ -1,0 +1,54 @@
+:root {
+    margin: 30px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.exchangeRate__wrapper {
+    width: 100%;
+    box-shadow: 0 0 20px 0 #00000025;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.exchangeRate__title {
+    font-size: 35px;
+}
+
+.exchangeRate__currencyTitle {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.currency {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 440px;
+    justify-content: space-between;
+}
+
+.currency__block {
+    display: flex;
+    gap: 10px;
+    width: 126px;
+}
+
+.baseCurrency {
+    font-size: 20px;
+}
+
+.rate {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+img {
+    align-self: center;
+}

@@ -1,0 +1,41 @@
+:root {
+    margin: 26px;
+}
+
+.filter {
+    display: grid;
+    justify-content: center;
+}
+
+input {
+    display: block;
+    float: left;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #1C1D21;
+    box-shadow: 0 0 20px 0 #00000025;
+    width: 600px;
+}
+
+.hidden {
+    display: none;
+}
+
+ul {
+    width: 620px;
+}
+
+#list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.listItem {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}

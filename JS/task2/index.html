@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!doctype html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+
+<section class="form">
+    <div class="form__box">
+        <form action="#" method="get" id="form" novalidate>
+
+            <div class="inputBox">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" class="username" placeholder="Enter the username"
+                       pattern="/^[-а-яА-ЯёЁa-zA-Z\s]+$/" minlength="3" maxlength="15" autocomplete="off" required>
+                <img width="20" height="20" src="./img/check.png" class="inputBox__img display_none"
+                     id="usernameInputBox-img">
+                <p class="error color_transparent" aria-live="polite" id="usernameErrorMessage"></p>
+            </div>
+
+            <div class="inputBox">
+                <label for="password">Password</label>
+                <div class="inputBox__wrapper">
+                    <input type="password" id="password" name="password" class="password"
+                           placeholder="Enter the password"
+                           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                           required>
+                    <img width="20" height="20" src="./img/check.png" class="inputBox__img display_none"
+                         id="passwordInputBox-img">
+                    <button class="inputBox__button" type="button" onclick="togglePassword(this)">
+                        <img width="20" height="20" src="./img/hide.png" alt="пароль" id="password-img">
+                    </button>
+                </div>
+                <p class="error color_transparent" aria-live="polite" id="passwordErrorMessage"></p>
+            </div>
+
+            <button class="form__button" name="submit" type="submit" id="submitBtn">Continue</button>
+
+        </form>
+    </div>
+</section>
+
+</body>
+</html>
