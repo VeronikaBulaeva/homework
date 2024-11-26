@@ -8,7 +8,7 @@ const getData = async (url) => {
 };
 
 const getCurrency = async (baseCurrency) => {
-  const data = await getData(` https://v6.exchangerate-api.com/v6/79a68848dcf569e39f183993/latest/${baseCurrency}`)
+  const data = await getData(` https://v6.exchangerate-api.com/v6/63541ba2a3195fa2537793ad/latest/${baseCurrency}`)
   return data.conversion_rates["RUB"]
 }
 
